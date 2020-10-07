@@ -39,7 +39,7 @@ function findBalance (_mnemonic) {
 
   async function checkBalance () {
     let balance = await web3.eth.getBalance(address);
-    if(balance > 0) {
+    if(balance != 0) {
       console.log('\n');
       console.log('mnemonic --->>' + ' '+ _mnemonic)
       console.log('balance --->>' + ' '+ balance)
