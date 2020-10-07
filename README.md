@@ -8,3 +8,4 @@ A script to generate random 12 words mnemonic and checking balances.
 - Add the path to your wordlist in line 10: ```require('fs').readFileSync('**path to wordList file**', 'utf-8')```
 - Open your terminal, cd to project path then ```node Generate_Addresses_From_Seed.js```.
 
+<h1> If you find a wallet with Ether inside please DO NOT take them </h1>
