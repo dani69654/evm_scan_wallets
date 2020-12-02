@@ -27,7 +27,7 @@ function generateMnemonic () {
 }
 
 function findBalance (_mnemonic) {
-  const hdwallet = hdkey.fromMasterSeed(bip39.mnemonicToSeed(_mnemonic));
+  const hdwallet = hdkey.fromMasterSeed(bip39.mnemonicToSeedSync(_mnemonic));
   const path = "m/44'/60'/0'/0/0";
   const wallet = hdwallet.derivePath(path).getWallet();
   const address = `0x${wallet.getAddress().toString('hex')}`;
