@@ -1,6 +1,6 @@
 const eth = require('ethers');
 const Web3 = require('web3');
-const hdkey = require('ethereumjs-wallet/hdkey');
+const hdkey = require('ethereumjs-wallet');
 const bip39 = require('bip39');
 const web3 = new Web3('https://mainnet.infura.io/v3/*Your infura key*');
 
@@ -15,7 +15,7 @@ async function hack () {
     while(true) {
         entropy = eth.utils.randomBytes(16);
         mnemonicPhrase = eth.utils.entropyToMnemonic(entropy);
-        hdwallet = hdkey.fromMasterSeed(bip39.mnemonicToSeedSync(mnemonicPhrase));
+        hdwallet = hdkey.hdkey.fromMasterSeed(bip39.mnemonicToSeedSync(mnemonicPhrase));
         wallet = hdwallet.derivePath(path).getWallet();
         address = `0x${wallet.getAddress().toString('hex')}`;
         balance = await web3.eth.getBalance(address);
