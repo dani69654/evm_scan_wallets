@@ -1,0 +1,36 @@
+{
+  "name": "script_generatemnem_check_balance",
+  "version": "1.0.0",
+  "description": "A script to generate random 12 words mnemonic and checking balances.",
+  "main": "Generate_Addresses_From_Seed.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dani69654/Script_GenerateMnem_Check_Balance.git"
+  },
+  "author": "Daniele Martinelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dani69654/Script_GenerateMnem_Check_Balance/issues"
+  },
+  "homepage": "https://github.com/dani69654/Script_GenerateMnem_Check_Balance#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "bip39": "^3.0.3",
+    "cli-spinners": "^2.6.1",
+    "cool-ascii-faces": "^1.3.4",
+    "ethereumjs-wallet": "^1.0.1",
+    "ethers": "^5.0.32",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "ora": "^5.0.0",
+    "path": "^0.12.7",
+    "prettier": "^2.5.0",
+    "sendgrid": "^5.2.3",
+    "web3": "^1.6.1"
+  }
+}

@@ -1,9 +1,33 @@
-# Script_GenerateMnem_Check_Balance
-A script to generate random 12 words mnemonic and checking balances.
+# Generate random addresses and check balances
 
-**How to use it:**
+A script that generates random 12 words mnemonic, derives the address and check for balance. <br>
 
-- Add your Infura key: ```const web3 = new Web3('https://mainnet.infura.io/v3/**Infura Key**');```
-- Run it.
+## How to use it
 
-<h1> If you find a wallet with Ether inside please DO NOT take them, this project has been created for learning ONLY </h1>
+- Run `npm i`
+
+- Create a `.env` file in the root directory <br>
+  The env file should look like to this (the Sendgrid api key is not mandatory):
+
+```js
+  ETHEREUM_PRC_NODE =
+  SENDGRID_API_KEY =
+```
+
+- If the Sendgrid api is set, you must set the sender and the receiver email addresses (modules/sendgrid)
+
+```js
+this.message = {
+  to: null,
+  from: null,
+  subject: '[Wallet Scan Script] - New wallet found',
+  text: '',
+}
+```
+
+- Run `npm start`
+
+## In case a valid wallet is found
+
+The wallet information (mnemonic, address, amount of tokens hold) is displayed in the console. <br>
+If the Sendgrid API key is set, the script sends an email.
