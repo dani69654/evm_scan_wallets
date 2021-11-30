@@ -2,6 +2,8 @@
 
 A script that generates random 12 words mnemonic, derives the address and check for balance. <br>
 
+![alt text](https://im3.ezgif.com/tmp/ezgif-3-a72e60facdf3.gif)
+
 ## How to use it
 
 - Run `npm i`
