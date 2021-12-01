@@ -9,7 +9,7 @@ A script that generates random 12 words mnemonic, derives the address and check 
 - Run `npm i`
 
 - Create a `.env` file in the root directory <br>
-  The env file should look like to this (the Sendgrid api key is not mandatory):
+  The env file should look like this (the Sendgrid api key is not mandatory):
 
 ```js
   ETHEREUM_PRC_NODE =
