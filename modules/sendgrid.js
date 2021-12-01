@@ -6,6 +6,7 @@ class SendGrid {
     if (!env.SENDGRID_API_KEY) {
       console.log('No Sendgrid API key found. This function is disabled.')
       this.enabled = false
+      return
     }
     this.sendGrid = sgMail.setApiKey(env.SENDGRID_API_KEY)
     this.message = {
