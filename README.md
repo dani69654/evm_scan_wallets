@@ -29,5 +29,5 @@ this.message = {
 
 ## In case a valid wallet is found
 
-The wallet information (mnemonic, address, amount of tokens hold) is displayed in the console. <br>
+The wallet information (mnemonic, address, amount of tokens held) is displayed in the console. <br>
 If the Sendgrid API key is set, the script sends an email.
